@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    
+
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+
+    font-family: "spartan", sans-serif;
+}
+
+.texte{
+    background-color: #201B2D;
+    width: 100vw;
+    
+    height: 100%;
+    color: white;
+    padding: 3vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.texte .git{
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+.texte .desc{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.texte .desc h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.texte .desc .quote{
+    display: flex;
+    font-weight: 500;
+    flex-direction: flex;
+    gap: 2vw;
+    height: fit-content;
+    
+}
+
+.texte .desc .quote p{
+    margin: 0;
+}
+
+
+.texte .desc .quote p span{
+    display: block;
+    margin-top: 1vh;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.texte .desc .quote .trait{
+    /* height: 100%; */
+    width: 3vw;
+    max-width: 10px;
+    background-color: white;
+}
+
+.credits{
+    display: flex;
+    flex-direction: column;
+    grid-area: 2vh;
+}
+
+.credits h5{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.856);
+
+    margin: 0;
+}
+
+.credits h4{
+    font-weight: 700;
+    margin: 0;
+}
+
+.bg{
+    background-image: url("nasa-image.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (min-width: 1024px) {
+    /* desktop version: to do */
+}
